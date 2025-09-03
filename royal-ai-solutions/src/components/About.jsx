@@ -3,18 +3,18 @@ import './About.css'
 
 const About = () => {
   const skills = [
-    'Machine Learning',
-    'Deep Learning',
-    'Computer Vision',
-    'Natural Language Processing',
-    'Generative AI',
-    'AI Automation',
-    'Predictive Analytics',
-    'Chatbot Development',
     'Video-to-Comic AI',
-    'Content Generation',
+    'Computer Vision',
+    'Deep Learning',
+    'Generative AI',
+    'Machine Learning',
+    'Natural Language Processing',
+    'AI Automation',
     'Business Intelligence',
-    'AI Strategy'
+    'Predictive Analytics',
+    'Content Generation',
+    'AI Pipeline Development',
+    'Enterprise AI Solutions'
   ]
 
   return (
@@ -26,27 +26,51 @@ const About = () => {
             <div className="about-intro">
               <h3>AI Developer & Business Transformation Expert</h3>
               <p>
-                With a proven track record at <strong>Puntoon Kids</strong> (3.4 million YouTube subscribers), 
-                I specialize in developing cutting-edge AI solutions that drive real business results. 
-                My expertise spans from creating innovative video-to-comic AI pipelines to implementing 
-                enterprise-grade automation systems.
+                Pioneering AI solutions that transform how businesses create content and operate. 
+                With expertise in <strong>video-to-comic generation</strong> and <strong>enterprise AI systems</strong>, 
+                I help companies achieve unprecedented efficiency and creativity through artificial intelligence.
               </p>
             </div>
 
-            <div className="experience-highlight">
-              <div className="exp-icon">🎮</div>
-              <div className="exp-content">
-                <h4>Puntoon Kids YouTube Channel</h4>
-                <p className="exp-role">AI Developer & Technical Lead</p>
-                <p>
-                  Developed groundbreaking AI systems for one of YouTube's fastest-growing kids' channels. 
-                  Created automated content generation pipelines that transformed their production capabilities 
-                  and helped reach millions of young viewers worldwide.
-                </p>
-                <div className="exp-achievements">
-                  <span>3.4M+ Subscribers Impact</span>
-                  <span>AI Pipeline Development</span>
-                  <span>Content Automation</span>
+            <div className="experience-section">
+              <h3>Professional Experience</h3>
+              
+              <div className="experience-highlight">
+                <div className="exp-icon">🎮</div>
+                <div className="exp-content">
+                  <h4>Puntoon Kids YouTube Channel</h4>
+                  <p className="exp-role">AI Developer - Video to Comic Generation</p>
+                  <p>
+                    Developed and implemented a revolutionary <strong>AI-based video-to-comic generation system</strong> 
+                    for one of YouTube's leading kids' channels with 3.4 million subscribers. This groundbreaking 
+                    technology automatically transforms video content into engaging comic strips, revolutionizing 
+                    content creation and distribution.
+                  </p>
+                  <div className="exp-achievements">
+                    <span>🎨 Video-to-Comic AI Pipeline</span>
+                    <span>📹 3.4M+ Subscribers Impact</span>
+                    <span>🚀 20x Faster Production</span>
+                    <span>🤖 Automated Comic Generation</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="experience-highlight">
+                <div className="exp-icon">💼</div>
+                <div className="exp-content">
+                  <h4>Vidunit</h4>
+                  <p className="exp-role">AI Business Solutions Developer</p>
+                  <p>
+                    Architected and deployed comprehensive <strong>AI business solutions</strong> at Vidunit, 
+                    focusing on enterprise automation, intelligent workflows, and data-driven decision making. 
+                    Helped businesses achieve digital transformation through custom AI implementations.
+                  </p>
+                  <div className="exp-achievements">
+                    <span>🏢 Enterprise AI Solutions</span>
+                    <span>📊 Business Intelligence</span>
+                    <span>⚡ Process Automation</span>
+                    <span>💰 500% Average ROI</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -59,6 +83,24 @@ const About = () => {
                 ))}
               </div>
             </div>
+
+            <div className="specialization-cards">
+              <div className="spec-card">
+                <i className="fas fa-video"></i>
+                <h4>Video-to-Comic AI</h4>
+                <p>Expert in transforming video content into comic strips using advanced AI</p>
+              </div>
+              <div className="spec-card">
+                <i className="fas fa-building"></i>
+                <h4>Enterprise Solutions</h4>
+                <p>Custom AI implementations for business transformation and growth</p>
+              </div>
+              <div className="spec-card">
+                <i className="fas fa-robot"></i>
+                <h4>AI Automation</h4>
+                <p>Automating complex processes to achieve 10x efficiency gains</p>
+              </div>
+            </div>
           </div>
 
           <div className="about-image">
@@ -68,12 +110,12 @@ const About = () => {
                 <span>AI Expert</span>
               </div>
               <div className="floating-badge badge-1">
-                <i className="fas fa-star"></i>
-                3.4M+ Reach
+                <i className="fas fa-film"></i>
+                Video-to-Comic
               </div>
               <div className="floating-badge badge-2">
-                <i className="fas fa-trophy"></i>
-                150+ Projects
+                <i className="fas fa-users"></i>
+                3.4M+ Reach
               </div>
               <div className="floating-badge badge-3">
                 <i className="fas fa-chart-line"></i>
