@@ -1,0 +1,178 @@
+/* Royal Color Palette */
+:root {
+  /* Royal Colors */
+  --royal-navy: #1a237e;
+  --royal-blue: #283593;
+  --royal-purple: #4527a0;
+  --royal-gold: #ffc107;
+  --royal-cream: #fffef7;
+  
+  /* Text Colors */
+  --text-primary: #1a1a1a;
+  --text-secondary: #424242;
+  --text-light: #616161;
+  --text-white: #ffffff;
+  
+  /* Background Colors */
+  --bg-white: #ffffff;
+  --bg-light: #fafafa;
+  --bg-cream: #fffef7;
+  
+  /* Gradients */
+  --gradient-royal: linear-gradient(135deg, #1a237e 0%, #4527a0 100%);
+  --gradient-gold: linear-gradient(135deg, #ffc107 0%, #ffb300 100%);
+  
+  /* Fonts */
+  --font-heading: 'Cormorant Garamond', serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(26, 35, 126, 0.08);
+  --shadow-md: 0 4px 16px rgba(26, 35, 126, 0.12);
+  --shadow-lg: 0 8px 32px rgba(26, 35, 126, 0.16);
+}
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--text-primary);
+  background-color: var(--bg-white);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--royal-navy);
+}
+
+h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 700;
+}
+
+h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+h3 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+p {
+  line-height: 1.8;
+  color: var(--text-secondary);
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary {
+  background: var(--gradient-royal);
+  color: var(--text-white);
+  box-shadow: var(--shadow-md);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.btn-secondary {
+  background: var(--bg-white);
+  color: var(--royal-navy);
+  border: 2px solid var(--royal-navy);
+}
+
+.btn-secondary:hover {
+  background: var(--royal-navy);
+  color: var(--text-white);
+}
+
+.btn-gold {
+  background: var(--gradient-gold);
+  color: var(--royal-navy);
+  box-shadow: var(--shadow-md);
+}
+
+.btn-gold:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Section Spacing */
+section {
+  padding: 5rem 0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.8s ease-out;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  section {
+    padding: 3rem 0;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.75rem;
+  }
+  
+  .btn {
+    padding: 0.875rem 1.5rem;
+    font-size: 0.875rem;
+  }
+}
