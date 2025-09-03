@@ -500,6 +500,16 @@ strong {
   gap: 0.5rem;
 }
 
+.service-card.featured {
+  grid-column: span 2;
+  background: var(--gradient-light);
+  border: 2px solid var(--primary);
+}
+
+.service-card.featured .service-icon-wrapper {
+  background: white;
+}
+
 /* Contact Section */
 .contact {
   padding: 80px 0;
