@@ -1,6 +1,6 @@
 # RoyalAI Solutions - Professional AI Portfolio
 
-A React-based portfolio website showcasing AI expertise, featuring work with Puntoon Kids (3.4M YouTube subscribers) on video-to-comic AI generation and Vidunit for enterprise AI solutions.
+A professional portfolio website showcasing AI expertise, featuring work with Puntoon Kids (3.4M YouTube subscribers) on video-to-comic AI generation and Vidunit for enterprise AI solutions.
 
 ## 🌟 Features
 
@@ -10,69 +10,55 @@ A React-based portfolio website showcasing AI expertise, featuring work with Pun
 - **Client Testimonials**: Success stories from major projects
 - **Contact Integration**: Multiple contact methods including WhatsApp
 - **Fully Responsive**: Works perfectly on all devices
-- **Fast Performance**: Built with Vite for optimal loading speeds
+- **Optimized Performance**: Pure HTML/CSS/JS for fast loading
 
-## 🚀 Tech Stack
+## 📂 Project Structure
 
-- **React 19**: Latest React version for modern UI development
-- **Vite**: Lightning-fast build tool and dev server
-- **CSS3**: Custom styling with royal theme
-- **Font Awesome**: Icons for enhanced UI
-- **Google Fonts**: Cinzel and Montserrat for elegant typography
-
-## 📦 Installation
-
-1. Clone or navigate to the project directory
-
-2. Install dependencies:
-```bash
-npm install
+```
+/workspace/
+├── index.html      # Main HTML file with all content
+├── styles.css      # Royal-themed CSS styling
+├── script.js       # JavaScript for interactions
+├── netlify.toml    # Netlify configuration
+└── README.md       # Project documentation
 ```
 
-3. Run development server:
-```bash
-npm run dev
-```
+## 🚀 Key Sections
 
-4. Build for production:
-```bash
-npm run build
-```
+1. **Hero Section**: Eye-catching introduction with stats
+2. **About Section**: Experience with Puntoon Kids & Vidunit
+3. **Services**: 6 comprehensive AI service offerings
+4. **Portfolio**: Featured projects and case studies
+5. **Testimonials**: Client success stories
+6. **Contact**: Multiple contact methods and form
+
+## 🎨 Technologies Used
+
+- **HTML5**: Semantic structure
+- **CSS3**: Modern styling with custom properties
+- **JavaScript**: Vanilla JS for interactions
+- **Font Awesome**: Icons
+- **Google Fonts**: Cinzel and Montserrat
 
 ## 🌐 Deployment on Netlify
 
-### Option 1: Direct Deploy from GitHub
+### Option 1: Drag & Drop
+1. Go to [Netlify Drop](https://app.netlify.com/drop)
+2. Drag your project folder
+3. Done!
 
-1. Push this code to your GitHub repository
-2. Go to [Netlify](https://app.netlify.com)
-3. Click "Add new site" > "Import an existing project"
-4. Connect to your GitHub repository
-5. Configure build settings:
-   - **Base directory**: Leave empty (or `/`)
-   - **Build command**: `npm run build`
-   - **Publish directory**: `dist`
-6. Click "Deploy site"
-
-### Option 2: Manual Deploy
-
-1. Build the project:
-```bash
-npm run build
-```
-
-2. Drag and drop the `dist` folder to Netlify's deploy area
+### Option 2: Git Integration
+1. Push code to GitHub
+2. Connect to Netlify
+3. Deploy with these settings:
+   - **Base directory**: Leave empty
+   - **Build command**: Leave empty
+   - **Publish directory**: Leave empty
 
 ### Option 3: Netlify CLI
-
-1. Install Netlify CLI:
 ```bash
 npm install -g netlify-cli
-```
-
-2. Build and deploy:
-```bash
-npm run build
-netlify deploy --prod --dir=dist
+netlify deploy --prod
 ```
 
 ## 📱 Contact Information
@@ -81,12 +67,13 @@ netlify deploy --prod --dir=dist
 - **WhatsApp**: +91-9075228258
 - **Email**: amitjaiswal044@gmail.com
 
-## 🎨 Customization
+## 🎯 Highlights
 
-1. **Colors**: Edit CSS variables in `src/App.css`
-2. **Content**: Update component files in `src/components/`
-3. **Services**: Modify `src/components/Services.jsx`
-4. **Portfolio**: Update projects in `src/components/Portfolio.jsx`
+- **Puntoon Kids**: AI-based video-to-comic generation (3.4M subscribers)
+- **Vidunit**: Enterprise AI business solutions
+- **150+ Projects** completed
+- **500% Average ROI** for clients
+- **98% Client Retention** rate
 
 ## 📄 License
 
