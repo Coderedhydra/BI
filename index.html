@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Solutions Specialist - Elevate Business & Creativity</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-trail"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">AI Solutions</div>
+            <ul class="nav-menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">AI Solutions that Elevate Business & Creativity</h1>
+                <p class="hero-subtitle">From Video-to-Comic pipelines to Chatbots—see how we bring ideas to life.</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="openContactPanel()">Contact Me</button>
+                    <a href="https://wa.me/919075228258" target="_blank" class="btn btn-secondary">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Me
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-shapes">
+                    <div class="shape shape-1"></div>
+                    <div class="shape shape-2"></div>
+                    <div class="shape shape-3"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="lead">I'm an AI Solutions Specialist passionate about transforming creative visions into reality through cutting-edge artificial intelligence.</p>
+                    <p>My journey includes a remarkable collaboration with <strong>Puntoon Games</strong>, a YouTube powerhouse with over <strong>3.4 million subscribers</strong>. For their dynamic content needs, I developed sophisticated <strong>video-to-comic generation pipelines</strong> that revolutionized their content creation process.</p>
+                    <p>I combine technical rigour with creative innovation to deliver AI-powered media solutions that not only meet but exceed expectations. Whether it's transforming video content into engaging comic narratives or building intelligent conversational systems, I bring ideas to life with precision and artistry.</p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <h3>3.4M+</h3>
+                            <p>Channel Subscribers</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>50+</h3>
+                            <p>AI Projects Delivered</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>100%</h3>
+                            <p>Client Satisfaction</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">Services & Solutions</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>AI Video-to-Comic Generation</h3>
+                    <p>Transform your video content into stunning comic narratives with our state-of-the-art AI pipeline. Perfect for content creators looking to expand their reach across different media formats.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Conversational & Workflow AI Integration</h3>
+                    <p>Seamlessly integrate intelligent conversational AI into your business workflows. Automate customer interactions while maintaining a human touch.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Custom Chatbots / Agentic AI</h3>
+                    <p>Build sophisticated chatbots and AI agents tailored to your specific needs. From customer service to specialized task automation, we create AI that works for you.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Data Intelligence & Visualization Tools</h3>
+                    <p>Unlock insights from your data with powerful AI-driven analytics and beautiful, interactive visualizations that tell compelling stories.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <h2 class="section-title">Portfolio Showcase</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="video">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/400x300/667eea/ffffff?text=Puntoon+Games" alt="Puntoon Games Project">
+                        <div class="portfolio-overlay">
+                            <h3>Puntoon Games – Video-to-Comic</h3>
+                            <p>Developed AI pipeline for transforming gaming videos into engaging comic content</p>
+                            <span class="view-project">View Project <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="chatbot">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/400x300/f56565/ffffff?text=AI+Chatbot" alt="Enterprise Chatbot">
+                        <div class="portfolio-overlay">
+                            <h3>Enterprise Customer Service Bot</h3>
+                            <p>Intelligent conversational AI handling 10k+ queries daily</p>
+                            <span class="view-project">View Project <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="data">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/400x300/48bb78/ffffff?text=Data+Viz" alt="Data Visualization">
+                        <div class="portfolio-overlay">
+                            <h3>Real-time Analytics Dashboard</h3>
+                            <p>AI-powered insights and predictive analytics platform</p>
+                            <span class="view-project">View Project <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="workflow">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/400x300/f8b500/ffffff?text=Workflow+AI" alt="Workflow Automation">
+                        <div class="portfolio-overlay">
+                            <h3>Workflow Automation Suite</h3>
+                            <p>End-to-end AI integration for business process optimization</p>
+                            <span class="view-project">View Project <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Create Something Amazing</h3>
+                    <p>Ready to transform your ideas into AI-powered solutions? I'm here to help bring your vision to life.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <a href="tel:+918459431389">+91-8459431389</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-whatsapp"></i>
+                            <div>
+                                <h4>WhatsApp</h4>
+                                <a href="https://wa.me/919075228258">+91-9075228258</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:amitjaiswal044@gmail.com">amitjaiswal044@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form name="contact" method="POST" data-netlify="true">
+                        <input type="hidden" name="form-name" value="contact">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AI Solutions</h3>
+                    <p>Transforming ideas into intelligent solutions</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AI Solutions Specialist. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Contact Panel -->
+    <div class="contact-panel" id="contactPanel">
+        <div class="panel-header">
+            <h3>Quick Contact</h3>
+            <button class="close-panel" onclick="closeContactPanel()">&times;</button>
+        </div>
+        <div class="panel-body">
+            <form name="quick-contact" method="POST" data-netlify="true">
+                <input type="hidden" name="form-name" value="quick-contact">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="3" placeholder="Quick Message" required></textarea>
+                <button type="submit" class="btn btn-primary btn-block">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
