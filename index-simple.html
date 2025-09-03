@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ByteBloom - AI Solutions That Make Your Business Flourish</title>
+    <meta name="description" content="ByteBloom delivers enterprise AI solutions that drive 10x ROI. From automation to predictive analytics, we help businesses bloom with intelligent technology.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Quick fix for preloader */
+        .preloader { display: none !important; }
+    </style>
+</head>
+<body>
+    <!-- Test version without preloader and particles -->
+    
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-trail"></div>
+    <div class="cursor-dot"></div>
+
+    <!-- Floating Flowers Background -->
+    <div class="flowers-bg">
+        <div class="flower flower-1">🌸</div>
+        <div class="flower flower-2">🌺</div>
+        <div class="flower flower-3">🌼</div>
+        <div class="flower flower-4">🌷</div>
+        <div class="flower flower-5">🌹</div>
+    </div>
+
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" id="themeToggle">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+    </button>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="brand-icon">🌸</span>
+                <span class="brand-text">Byte<span class="brand-accent">Bloom</span></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#benefits">Why ByteBloom</a></li>
+                <li><a href="#services">Solutions</a></li>
+                <li><a href="#results">Results</a></li>
+                <li><a href="#testimonials">Success Stories</a></li>
+                <li><a href="#contact">Get Started</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="petal-fall"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge bloom-animation">
+                    <span class="badge-icon">🌺</span>
+                    <span>Trusted by Fortune 500 Companies</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="title-line-1">Your Business Growth</span>
+                    <span class="title-line-2">Starts with <span class="bloom-text">ByteBloom</span></span>
+                </h1>
+                <p class="hero-subtitle">
+                    Transform your enterprise with AI solutions that deliver <strong>10x ROI</strong>. 
+                    We plant the seeds of innovation and watch your business bloom.
+                </p>
+                <div class="value-props">
+                    <div class="value-item">
+                        <i class="fas fa-chart-line"></i>
+                        <span>300% Efficiency Boost</span>
+                    </div>
+                    <div class="value-item">
+                        <i class="fas fa-clock"></i>
+                        <span>80% Time Saved</span>
+                    </div>
+                    <div class="value-item">
+                        <i class="fas fa-dollar-sign"></i>
+                        <span>$2M+ Saved Annually</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="alert('Contact form would open here')">
+                        <span>Get Your Free AI Assessment</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <button class="btn btn-secondary" onclick="alert('ROI Calculator would open here')">
+                        <i class="fas fa-calculator"></i>
+                        <span>Calculate Your ROI</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Simple cursor effect
+        document.addEventListener('mousemove', (e) => {
+            const cursor = document.querySelector('.cursor');
+            const cursorTrail = document.querySelector('.cursor-trail');
+            const cursorDot = document.querySelector('.cursor-dot');
+            
+            if (cursor) {
+                cursor.style.left = e.clientX + 'px';
+                cursor.style.top = e.clientY + 'px';
+            }
+            if (cursorTrail) {
+                setTimeout(() => {
+                    cursorTrail.style.left = e.clientX + 'px';
+                    cursorTrail.style.top = e.clientY + 'px';
+                }, 100);
+            }
+            if (cursorDot) {
+                cursorDot.style.left = e.clientX + 'px';
+                cursorDot.style.top = e.clientY + 'px';
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,5 +1,6 @@
-// Initialize particles.js with floral theme
-particlesJS('particles-js', {
+// Initialize particles.js with floral theme - only if library is loaded
+if (typeof particlesJS !== 'undefined' && document.getElementById('particles-js')) {
+    particlesJS('particles-js', {
     particles: {
         number: {
             value: 60,
@@ -82,51 +83,75 @@ particlesJS('particles-js', {
         }
     },
     retina_detect: true
-});
+    });
+}
 
 // Preloader
 window.addEventListener('load', () => {
     setTimeout(() => {
-        document.querySelector('.preloader').classList.add('fade-out');
-    }, 2000);
+        const preloader = document.querySelector('.preloader');
+        if (preloader) {
+            preloader.classList.add('fade-out');
+            // Also remove it from DOM after animation
+            setTimeout(() => {
+                preloader.style.display = 'none';
+            }, 500);
+        }
+    }, 1500);
+});
+
+// Fallback in case load event doesn't fire
+document.addEventListener('DOMContentLoaded', () => {
+    setTimeout(() => {
+        const preloader = document.querySelector('.preloader');
+        if (preloader && !preloader.classList.contains('fade-out')) {
+            preloader.classList.add('fade-out');
+            setTimeout(() => {
+                preloader.style.display = 'none';
+            }, 500);
+        }
+    }, 3000);
 });
 
 // Enhanced Custom Cursor
 const cursor = document.querySelector('.cursor');
 const cursorTrail = document.querySelector('.cursor-trail');
 const cursorDot = document.querySelector('.cursor-dot');
-let mouseX = 0;
-let mouseY = 0;
-let cursorX = 0;
-let cursorY = 0;
-let trailX = 0;
-let trailY = 0;
 
-document.addEventListener('mousemove', (e) => {
-    mouseX = e.clientX;
-    mouseY = e.clientY;
-    
-    // Cursor dot follows mouse exactly
-    cursorDot.style.left = mouseX + 'px';
-    cursorDot.style.top = mouseY + 'px';
-});
+if (cursor && cursorTrail && cursorDot) {
+    let mouseX = 0;
+    let mouseY = 0;
+    let cursorX = 0;
+    let cursorY = 0;
+    let trailX = 0;
+    let trailY = 0;
 
-function animateCursor() {
-    // Main cursor with lag
-    cursorX += (mouseX - cursorX) * 0.1;
-    cursorY += (mouseY - cursorY) * 0.1;
-    cursor.style.left = cursorX + 'px';
-    cursor.style.top = cursorY + 'px';
-    
-    // Cursor trail with more lag
-    trailX += (mouseX - trailX) * 0.05;
-    trailY += (mouseY - trailY) * 0.05;
-    cursorTrail.style.left = trailX + 'px';
-    cursorTrail.style.top = trailY + 'px';
-    
-    requestAnimationFrame(animateCursor);
+    document.addEventListener('mousemove', (e) => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+        
+        // Cursor dot follows mouse exactly
+        cursorDot.style.left = mouseX + 'px';
+        cursorDot.style.top = mouseY + 'px';
+    });
+
+    function animateCursor() {
+        // Main cursor with lag
+        cursorX += (mouseX - cursorX) * 0.1;
+        cursorY += (mouseY - cursorY) * 0.1;
+        cursor.style.left = cursorX + 'px';
+        cursor.style.top = cursorY + 'px';
+        
+        // Cursor trail with more lag
+        trailX += (mouseX - trailX) * 0.05;
+        trailY += (mouseY - trailY) * 0.05;
+        cursorTrail.style.left = trailX + 'px';
+        cursorTrail.style.top = trailY + 'px';
+        
+        requestAnimationFrame(animateCursor);
+    }
+    animateCursor();
 }
-animateCursor();
 
 // Cursor hover effects
 const hoverElements = document.querySelectorAll('a, button, .portfolio-item, .service-card, input, textarea, .filter-btn');
@@ -143,25 +168,27 @@ hoverElements.forEach(element => {
 const themeToggle = document.getElementById('themeToggle');
 const body = document.body;
 
-// Check for saved theme preference
-const currentTheme = localStorage.getItem('theme');
-if (currentTheme === 'dark') {
-    body.classList.add('dark-theme');
-}
-
-themeToggle.addEventListener('click', () => {
-    body.classList.toggle('dark-theme');
-    const isDark = body.classList.contains('dark-theme');
-    localStorage.setItem('theme', isDark ? 'dark' : 'light');
-    
-    // Update particles color for floral theme
-    if (window.pJSDom && window.pJSDom[0]) {
-        const pJS = window.pJSDom[0].pJS;
-        pJS.particles.color.value = isDark ? ['#c44569', '#f67280'] : ['#ff6b9d', '#c44569', '#f8b595'];
-        pJS.particles.line_linked.color = isDark ? '#c44569' : '#ff6b9d';
-        pJS.fn.particlesRefresh();
+if (themeToggle) {
+    // Check for saved theme preference
+    const currentTheme = localStorage.getItem('theme');
+    if (currentTheme === 'dark') {
+        body.classList.add('dark-theme');
     }
-});
+
+    themeToggle.addEventListener('click', () => {
+        body.classList.toggle('dark-theme');
+        const isDark = body.classList.contains('dark-theme');
+        localStorage.setItem('theme', isDark ? 'dark' : 'light');
+        
+        // Update particles color for floral theme
+        if (window.pJSDom && window.pJSDom[0]) {
+            const pJS = window.pJSDom[0].pJS;
+            pJS.particles.color.value = isDark ? ['#c44569', '#f67280'] : ['#ff6b9d', '#c44569', '#f8b595'];
+            pJS.particles.line_linked.color = isDark ? '#c44569' : '#ff6b9d';
+            pJS.fn.particlesRefresh();
+        }
+    });
+}
 
 // Add bloom animation to elements on scroll
 const bloomElements = document.querySelectorAll('.bloom-animation, .benefit-card, .service-card');
