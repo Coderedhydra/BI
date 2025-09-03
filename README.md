@@ -1,117 +1,93 @@
-# AI Solutions Portfolio Website
+# RoyalAI Solutions - Professional AI Portfolio
 
-A sleek, modern portfolio website for an AI solutions specialist, optimized for Netlify hosting.
+A React-based portfolio website showcasing AI expertise, featuring work with Puntoon Kids (3.4M YouTube subscribers) on video-to-comic AI generation and Vidunit for enterprise AI solutions.
 
-## Features
+## 🌟 Features
 
-- **Modern Design**: Clean, professional layout with gradient backgrounds and smooth animations
-- **Custom Cursor Effect**: Interactive neon trail cursor effect (desktop only)
-- **Responsive Design**: Fully mobile-responsive with optimized layouts for all devices
-- **Netlify Forms**: Integrated contact forms that work seamlessly with Netlify
-- **Performance Optimized**: Lazy loading, smooth scrolling, and optimized animations
-- **Interactive Elements**: Hover effects, parallax scrolling, and dynamic content
+- **Professional Royal Theme**: Elegant design with royal colors (navy, purple, gold)
+- **Comprehensive Portfolio**: Showcasing real-world AI implementations
+- **Service Offerings**: From video-to-comic AI to enterprise automation
+- **Client Testimonials**: Success stories from major projects
+- **Contact Integration**: Multiple contact methods including WhatsApp
+- **Fully Responsive**: Works perfectly on all devices
+- **Fast Performance**: Built with Vite for optimal loading speeds
 
-## Sections
+## 🚀 Tech Stack
 
-1. **Hero Section**
-   - Eye-catching headline and subheadline
-   - Call-to-action buttons (Contact & WhatsApp)
-   - Animated floating shapes
+- **React 19**: Latest React version for modern UI development
+- **Vite**: Lightning-fast build tool and dev server
+- **CSS3**: Custom styling with royal theme
+- **Font Awesome**: Icons for enhanced UI
+- **Google Fonts**: Cinzel and Montserrat for elegant typography
 
-2. **About Me**
-   - Professional introduction
-   - Experience highlights (Puntoon Games collaboration)
-   - Achievement statistics
+## 📦 Installation
 
-3. **Services**
-   - AI Video-to-Comic Generation
-   - Conversational & Workflow AI Integration
-   - Custom Chatbots / Agentic AI
-   - Data Intelligence & Visualization Tools
+1. Clone or navigate to the project directory
 
-4. **Portfolio**
-   - Visual project showcase with hover effects
-   - Project descriptions and details
-
-5. **Contact**
-   - Multiple contact methods
-   - Netlify-integrated contact form
-   - Quick contact panel
-
-## Deployment to Netlify
-
-1. **Push to GitHub**:
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial commit"
-   git remote add origin YOUR_GITHUB_REPO_URL
-   git push -u origin main
-   ```
-
-2. **Deploy on Netlify**:
-   - Log in to Netlify
-   - Click "New site from Git"
-   - Connect to GitHub and select your repository
-   - Deploy settings are already configured (no build command needed)
-   - Click "Deploy site"
-
-3. **Form Configuration**:
-   - Netlify automatically detects forms with `data-netlify="true"`
-   - Forms will work immediately after deployment
-   - Check form submissions in Netlify dashboard under "Forms"
-
-## Customization
-
-### Images
-Replace placeholder images in the portfolio section with actual project screenshots:
-- Update `src` attributes in portfolio items
-- Recommended size: 400x300px
-- Format: WebP or optimized JPEG/PNG
-
-### Colors
-Edit CSS variables in `styles.css`:
-```css
-:root {
-    --primary-color: #667eea;
-    --secondary-color: #764ba2;
-    --accent-color: #f8b500;
-    /* ... */
-}
+2. Install dependencies:
+```bash
+npm install
 ```
 
-### Content
-Update text content directly in `index.html`:
-- Hero section headlines
-- About me description
-- Service descriptions
-- Contact information
+3. Run development server:
+```bash
+npm run dev
+```
 
-### Social Links
-Add your social media URLs in the footer section of `index.html`
+4. Build for production:
+```bash
+npm run build
+```
 
-## Browser Support
+## 🌐 Deployment on Netlify
 
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
-- Mobile browsers
+### Option 1: Direct Deploy from GitHub
 
-## Performance Tips
+1. Push this code to your GitHub repository
+2. Go to [Netlify](https://app.netlify.com)
+3. Click "Add new site" > "Import an existing project"
+4. Connect to your GitHub repository
+5. Configure build settings:
+   - **Base directory**: Leave empty (or `/`)
+   - **Build command**: `npm run build`
+   - **Publish directory**: `dist`
+6. Click "Deploy site"
 
-- Optimize images before uploading (use WebP format when possible)
-- Keep total page size under 5MB
-- Use Netlify's asset optimization features
-- Enable Netlify's CDN for faster global delivery
+### Option 2: Manual Deploy
 
-## Contact Form Setup
+1. Build the project:
+```bash
+npm run build
+```
 
-The forms are already configured to work with Netlify. After deployment:
-1. Test the forms to ensure they're working
-2. Set up email notifications in Netlify dashboard
-3. Configure spam filters if needed
+2. Drag and drop the `dist` folder to Netlify's deploy area
 
-## License
+### Option 3: Netlify CLI
 
-This project is ready for commercial use. Feel free to modify and customize as needed.
+1. Install Netlify CLI:
+```bash
+npm install -g netlify-cli
+```
+
+2. Build and deploy:
+```bash
+npm run build
+netlify deploy --prod --dir=dist
+```
+
+## 📱 Contact Information
+
+- **Phone**: +91-8459431389
+- **WhatsApp**: +91-9075228258
+- **Email**: amitjaiswal044@gmail.com
+
+## 🎨 Customization
+
+1. **Colors**: Edit CSS variables in `src/App.css`
+2. **Content**: Update component files in `src/components/`
+3. **Services**: Modify `src/components/Services.jsx`
+4. **Portfolio**: Update projects in `src/components/Portfolio.jsx`
+
+## 📄 License
+
+© 2024 RoyalAI Solutions. All rights reserved.
