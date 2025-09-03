@@ -68,26 +68,15 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// Form submission
+// Form submission - Let Netlify handle it
 const contactForm = document.querySelector('.contact-form');
 if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        
-        // Get form data
-        const formData = new FormData(contactForm);
-        const data = Object.fromEntries(formData);
-        
-        // Simple form validation
-        if (!data.name || !data.email || !data.message) {
-            alert('Please fill in all required fields.');
-            return;
-        }
-        
-        // Here you would normally send the data to a server
-        // For now, we'll just show a success message
-        alert('Thank you for your message! I will get back to you soon.');
-        contactForm.reset();
+        // Don't prevent default - let Netlify handle the submission
+        // Just update the button to show sending state
+        const submitBtn = contactForm.querySelector('button[type="submit"]');
+        submitBtn.innerHTML = 'Sending...';
+        submitBtn.disabled = true;
     });
 }
 
