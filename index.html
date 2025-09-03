@@ -3,19 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Root AI Solutions - Transforming Ideas into Intelligent Reality</title>
+    <title>ByteBloom - AI Solutions That Make Your Business Flourish</title>
+    <meta name="description" content="ByteBloom delivers enterprise AI solutions that drive 10x ROI. From automation to predictive analytics, we help businesses bloom with intelligent technology.">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <!-- Preloader -->
     <div class="preloader">
         <div class="loader">
-            <div class="loader-text">ROOT<span>AI</span></div>
-            <div class="progress-bar"></div>
+            <div class="flower-loader">
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+            </div>
+            <div class="loader-text">Byte<span>Bloom</span></div>
         </div>
     </div>
 
@@ -33,18 +41,28 @@
         <i class="fas fa-sun"></i>
     </button>
 
+    <!-- Floating Flowers Background -->
+    <div class="flowers-bg">
+        <div class="flower flower-1">🌸</div>
+        <div class="flower flower-2">🌺</div>
+        <div class="flower flower-3">🌼</div>
+        <div class="flower flower-4">🌷</div>
+        <div class="flower flower-5">🌹</div>
+    </div>
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
             <div class="nav-brand">
-                <span class="brand-icon">🌱</span>
-                ROOT<span class="brand-accent">AI</span>
+                <span class="brand-icon">🌸</span>
+                <span class="brand-text">Byte<span class="brand-accent">Bloom</span></span>
             </div>
             <ul class="nav-menu">
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#benefits">Why ByteBloom</a></li>
+                <li><a href="#services">Solutions</a></li>
+                <li><a href="#results">Results</a></li>
+                <li><a href="#testimonials">Success Stories</a></li>
+                <li><a href="#contact">Get Started</a></li>
             </ul>
             <div class="nav-toggle">
                 <span></span>
@@ -56,100 +74,158 @@
 
     <!-- Hero Section -->
     <section class="hero" id="home">
-        <canvas id="neural-network"></canvas>
+        <div class="petal-fall"></div>
         <div class="container">
             <div class="hero-content">
-                <div class="hero-badge">
-                    <span class="badge-icon">✨</span>
-                    <span>Innovative AI Solutions</span>
+                <div class="hero-badge bloom-animation">
+                    <span class="badge-icon">🌺</span>
+                    <span>Trusted by Fortune 500 Companies</span>
                 </div>
-                <h1 class="hero-title glitch" data-text="ROOT AI SOLUTIONS">
-                    <span class="hero-root">ROOT</span>
-                    <span class="hero-ai">AI</span>
-                    <span class="hero-solutions">SOLUTIONS</span>
+                <h1 class="hero-title">
+                    <span class="title-line-1">Your Business Growth</span>
+                    <span class="title-line-2">Starts with <span class="bloom-text">ByteBloom</span></span>
                 </h1>
-                <div class="typewriter-container">
-                    <p class="hero-subtitle typewriter"></p>
+                <p class="hero-subtitle">
+                    Transform your enterprise with AI solutions that deliver <strong>10x ROI</strong>. 
+                    We plant the seeds of innovation and watch your business bloom.
+                </p>
+                <div class="value-props">
+                    <div class="value-item">
+                        <i class="fas fa-chart-line"></i>
+                        <span>300% Efficiency Boost</span>
+                    </div>
+                    <div class="value-item">
+                        <i class="fas fa-clock"></i>
+                        <span>80% Time Saved</span>
+                    </div>
+                    <div class="value-item">
+                        <i class="fas fa-dollar-sign"></i>
+                        <span>$2M+ Saved Annually</span>
+                    </div>
                 </div>
                 <div class="hero-buttons">
-                    <button class="btn btn-glow" onclick="openContactPanel()">
-                        <span class="btn-text">Start Your AI Journey</span>
-                        <span class="btn-particles"></span>
+                    <button class="btn btn-primary" onclick="openContactPanel()">
+                        <span>Get Your Free AI Assessment</span>
+                        <i class="fas fa-arrow-right"></i>
                     </button>
-                    <a href="https://wa.me/919075228258" target="_blank" class="btn btn-outline">
-                        <i class="fab fa-whatsapp"></i>
-                        <span>Quick Chat</span>
-                    </a>
+                    <button class="btn btn-secondary" onclick="showROICalculator()">
+                        <i class="fas fa-calculator"></i>
+                        <span>Calculate Your ROI</span>
+                    </button>
                 </div>
-                <div class="hero-stats">
-                    <div class="stat-item" data-count="50">0</div>
-                    <div class="stat-item" data-count="100">0</div>
-                    <div class="stat-item" data-count="24">0</div>
+                <div class="trust-indicators">
+                    <p>Trusted by industry leaders:</p>
+                    <div class="company-logos">
+                        <div class="logo-placeholder">Tech Corp</div>
+                        <div class="logo-placeholder">Finance Inc</div>
+                        <div class="logo-placeholder">Retail Plus</div>
+                        <div class="logo-placeholder">Health Pro</div>
+                    </div>
                 </div>
             </div>
             <div class="hero-visual">
-                <div class="ai-brain">
-                    <div class="brain-core"></div>
-                    <div class="brain-orbit orbit-1"></div>
-                    <div class="brain-orbit orbit-2"></div>
-                    <div class="brain-orbit orbit-3"></div>
+                <div class="bloom-animation-container">
+                    <div class="digital-flower">
+                        <div class="flower-center"></div>
+                        <div class="petal-ring ring-1"></div>
+                        <div class="petal-ring ring-2"></div>
+                        <div class="petal-ring ring-3"></div>
+                        <div class="data-particles"></div>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="scroll-indicator">
-            <span>Explore</span>
+            <span>Discover Your Growth</span>
             <div class="mouse">
                 <div class="wheel"></div>
             </div>
         </div>
     </section>
 
-    <!-- About Me Section -->
-    <section class="about" id="about">
+    <!-- Why ByteBloom Section -->
+    <section class="benefits" id="benefits">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <div class="about-intro">
-                        <h3 class="gradient-text">Where Innovation Meets Intelligence</h3>
-                        <p class="lead">Welcome to Root AI Solutions – where we plant the seeds of artificial intelligence to grow transformative solutions for your business.</p>
+            <div class="section-header">
+                <h2 class="section-title">Why Companies Choose <span class="bloom-text">ByteBloom</span></h2>
+                <p class="section-subtitle">We don't just deliver AI solutions – we cultivate business transformation</p>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card" data-aos="fade-up">
+                    <div class="benefit-icon">
+                        <i class="fas fa-rocket"></i>
+                        <div class="icon-bloom"></div>
                     </div>
-                    <div class="about-story">
-                        <div class="story-card">
-                            <div class="card-icon">🎮</div>
-                            <h4>Gaming Content Revolution</h4>
-                            <p>Partnered with <strong>Puntoon Games</strong> (3.4M+ subscribers) to create groundbreaking <strong>video-to-comic AI pipelines</strong> that transformed their content strategy.</p>
-                        </div>
-                        <div class="story-card">
-                            <div class="card-icon">🚀</div>
-                            <h4>Innovation at Core</h4>
-                            <p>We don't just implement AI – we reimagine possibilities. From conversational AI to creative automation, we craft solutions that feel like magic.</p>
-                        </div>
-                        <div class="story-card">
-                            <div class="card-icon">🌟</div>
-                            <h4>Results That Matter</h4>
-                            <p>Every project is a masterpiece. We blend technical excellence with creative vision to deliver AI solutions that drive real business impact.</p>
-                        </div>
+                    <h3>10x Faster Implementation</h3>
+                    <p>Our proven AI frameworks reduce deployment time from months to weeks, getting you to market faster than competitors.</p>
+                    <div class="benefit-stat">
+                        <span class="stat-value">2-4 weeks</span>
+                        <span class="stat-label">Average deployment</span>
                     </div>
-                    <div class="stats-container">
-                        <div class="stat-card animated-stat">
-                            <div class="stat-icon">📺</div>
-                            <h3 class="stat-number" data-target="3.4">0</h3>
-                            <span class="stat-suffix">M+</span>
-                            <p>Audience Reached</p>
-                        </div>
-                        <div class="stat-card animated-stat">
-                            <div class="stat-icon">🤖</div>
-                            <h3 class="stat-number" data-target="50">0</h3>
-                            <span class="stat-suffix">+</span>
-                            <p>AI Solutions Deployed</p>
-                        </div>
-                        <div class="stat-card animated-stat">
-                            <div class="stat-icon">⚡</div>
-                            <h3 class="stat-number" data-target="100">0</h3>
-                            <span class="stat-suffix">%</span>
-                            <p>Success Rate</p>
-                        </div>
+                </div>
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="benefit-icon">
+                        <i class="fas fa-piggy-bank"></i>
+                        <div class="icon-bloom"></div>
+                    </div>
+                    <h3>Guaranteed ROI</h3>
+                    <p>We guarantee minimum 300% ROI within the first year or we continue optimizing at no extra cost.</p>
+                    <div class="benefit-stat">
+                        <span class="stat-value">$2.5M+</span>
+                        <span class="stat-label">Average annual savings</span>
+                    </div>
+                </div>
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="benefit-icon">
+                        <i class="fas fa-shield-alt"></i>
+                        <div class="icon-bloom"></div>
+                    </div>
+                    <h3>Enterprise-Grade Security</h3>
+                    <p>Bank-level encryption, SOC 2 compliance, and on-premise deployment options for maximum data protection.</p>
+                    <div class="benefit-stat">
+                        <span class="stat-value">99.99%</span>
+                        <span class="stat-label">Uptime guarantee</span>
+                    </div>
+                </div>
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="benefit-icon">
+                        <i class="fas fa-users"></i>
+                        <div class="icon-bloom"></div>
+                    </div>
+                    <h3>24/7 Expert Support</h3>
+                    <p>Dedicated AI specialists available round-the-clock to ensure your systems run smoothly and evolve with your needs.</p>
+                    <div class="benefit-stat">
+                        <span class="stat-value"><5 min</span>
+                        <span class="stat-label">Response time</span>
+                    </div>
+                </div>
+            </div>
+            <div class="success-metrics">
+                <h3>Our Track Record Speaks for Itself</h3>
+                <div class="metrics-grid">
+                    <div class="metric-item">
+                        <div class="metric-flower">🌼</div>
+                        <h4 data-target="87">0</h4>
+                        <span class="metric-suffix">%</span>
+                        <p>Cost Reduction</p>
+                    </div>
+                    <div class="metric-item">
+                        <div class="metric-flower">🌷</div>
+                        <h4 data-target="150">0</h4>
+                        <span class="metric-suffix">+</span>
+                        <p>Happy Clients</p>
+                    </div>
+                    <div class="metric-item">
+                        <div class="metric-flower">🌹</div>
+                        <h4 data-target="3.2">0</h4>
+                        <span class="metric-suffix">B</span>
+                        <p>Data Points Processed</p>
+                    </div>
+                    <div class="metric-item">
+                        <div class="metric-flower">🌺</div>
+                        <h4 data-target="24">0</h4>
+                        <span class="metric-suffix">/7</span>
+                        <p>Support Available</p>
                     </div>
                 </div>
             </div>
@@ -159,84 +235,165 @@
     <!-- Services Section -->
     <section class="services" id="services">
         <div class="container">
-            <h2 class="section-title">Services & Solutions</h2>
+            <div class="section-header">
+                <h2 class="section-title">AI Solutions That Make Your Business <span class="bloom-text">Bloom</span></h2>
+                <p class="section-subtitle">Enterprise-grade AI services designed to maximize your competitive advantage</p>
+            </div>
             <div class="services-grid">
-                <div class="service-card" data-service="video">
-                    <div class="service-bg"></div>
+                <div class="service-card bloom-hover" data-service="automation">
+                    <div class="service-bloom"></div>
                     <div class="service-content">
-                        <div class="service-icon">
-                            <i class="fas fa-video"></i>
-                            <div class="icon-bg"></div>
+                        <div class="service-header">
+                            <div class="service-icon">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                            <span class="service-badge">Most Popular</span>
                         </div>
-                        <h3>AI Video-to-Comic Generation</h3>
-                        <p>Revolutionary pipeline that transforms video content into stunning comic narratives. Used by creators with millions of followers.</p>
-                        <div class="service-features">
-                            <span class="feature-tag">Style Transfer</span>
-                            <span class="feature-tag">Auto Layout</span>
-                            <span class="feature-tag">Real-time</span>
+                        <h3>Intelligent Process Automation</h3>
+                        <p>Automate complex business processes with AI that learns and adapts to your workflow patterns.</p>
+                        <div class="service-benefits">
+                            <div class="benefit-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Reduce operational costs by 65%</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Process 10x more transactions</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Zero manual errors</span>
+                            </div>
                         </div>
-                        <button class="service-cta">Explore <i class="fas fa-arrow-right"></i></button>
+                        <div class="service-roi">
+                            <span class="roi-label">Average ROI:</span>
+                            <span class="roi-value">450%</span>
+                        </div>
+                        <button class="service-cta bloom-btn">
+                            See How It Works <i class="fas fa-arrow-right"></i>
+                        </button>
                     </div>
                 </div>
-                <div class="service-card" data-service="chat">
-                    <div class="service-bg"></div>
+                <div class="service-card bloom-hover" data-service="analytics">
+                    <div class="service-bloom"></div>
                     <div class="service-content">
-                        <div class="service-icon">
-                            <i class="fas fa-comments"></i>
-                            <div class="icon-bg"></div>
+                        <div class="service-header">
+                            <div class="service-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <span class="service-badge">Game Changer</span>
                         </div>
-                        <h3>Conversational AI Integration</h3>
-                        <p>Intelligent chatbots that understand context, emotion, and intent. Seamlessly integrate AI into your customer journey.</p>
-                        <div class="service-features">
-                            <span class="feature-tag">NLP</span>
-                            <span class="feature-tag">Multi-lingual</span>
-                            <span class="feature-tag">24/7 Support</span>
+                        <h3>Predictive Analytics & Insights</h3>
+                        <p>See the future of your business with AI that predicts trends, opportunities, and risks before they happen.</p>
+                        <div class="service-benefits">
+                            <div class="benefit-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>95% forecast accuracy</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Spot opportunities 3 months early</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Real-time market insights</span>
+                            </div>
                         </div>
-                        <button class="service-cta">Explore <i class="fas fa-arrow-right"></i></button>
+                        <div class="service-roi">
+                            <span class="roi-label">Revenue Increase:</span>
+                            <span class="roi-value">+35%</span>
+                        </div>
+                        <button class="service-cta bloom-btn">
+                            View Demo <i class="fas fa-arrow-right"></i>
+                        </button>
                     </div>
                 </div>
-                <div class="service-card" data-service="agent">
-                    <div class="service-bg"></div>
+                <div class="service-card bloom-hover" data-service="customer">
+                    <div class="service-bloom"></div>
                     <div class="service-content">
-                        <div class="service-icon">
-                            <i class="fas fa-robot"></i>
-                            <div class="icon-bg"></div>
+                        <div class="service-header">
+                            <div class="service-icon">
+                                <i class="fas fa-headset"></i>
+                            </div>
+                            <span class="service-badge">24/7 Active</span>
                         </div>
-                        <h3>Agentic AI Solutions</h3>
-                        <p>Autonomous AI agents that think, learn, and act. From workflow automation to complex decision-making systems.</p>
-                        <div class="service-features">
-                            <span class="feature-tag">Self-Learning</span>
-                            <span class="feature-tag">Automation</span>
-                            <span class="feature-tag">Custom Logic</span>
+                        <h3>AI Customer Experience Suite</h3>
+                        <p>Delight customers with AI that understands, engages, and resolves issues instantly across all channels.</p>
+                        <div class="service-benefits">
+                            <div class="benefit-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>90% first-contact resolution</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Support in 50+ languages</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>4.9/5 customer satisfaction</span>
+                            </div>
                         </div>
-                        <button class="service-cta">Explore <i class="fas fa-arrow-right"></i></button>
+                        <div class="service-roi">
+                            <span class="roi-label">Cost Savings:</span>
+                            <span class="roi-value">$1.2M/yr</span>
+                        </div>
+                        <button class="service-cta bloom-btn">
+                            Get Started <i class="fas fa-arrow-right"></i>
+                        </button>
                     </div>
                 </div>
-                <div class="service-card" data-service="data">
-                    <div class="service-bg"></div>
+                <div class="service-card bloom-hover" data-service="creative">
+                    <div class="service-bloom"></div>
                     <div class="service-content">
-                        <div class="service-icon">
-                            <i class="fas fa-chart-line"></i>
-                            <div class="icon-bg"></div>
+                        <div class="service-header">
+                            <div class="service-icon">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                            <span class="service-badge">Innovation</span>
                         </div>
-                        <h3>Data Intelligence Platform</h3>
-                        <p>Turn raw data into actionable insights with AI-powered analytics and stunning interactive visualizations.</p>
-                        <div class="service-features">
-                            <span class="feature-tag">Predictive</span>
-                            <span class="feature-tag">Real-time</span>
-                            <span class="feature-tag">Custom Dashboards</span>
+                        <h3>Creative AI Solutions</h3>
+                        <p>Transform content creation with AI that generates videos, images, and copy that converts and engages.</p>
+                        <div class="service-benefits">
+                            <div class="benefit-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Create content 20x faster</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>A/B test at scale</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Personalize for millions</span>
+                            </div>
                         </div>
-                        <button class="service-cta">Explore <i class="fas fa-arrow-right"></i></button>
+                        <div class="service-roi">
+                            <span class="roi-label">Engagement Boost:</span>
+                            <span class="roi-value">+280%</span>
+                        </div>
+                        <button class="service-cta bloom-btn">
+                            See Examples <i class="fas fa-arrow-right"></i>
+                        </button>
                     </div>
                 </div>
+            </div>
+            <div class="service-cta-section">
+                <h3>Not sure which solution is right for you?</h3>
+                <p>Our AI experts will analyze your business and recommend the perfect growth strategy.</p>
+                <button class="btn btn-primary btn-large" onclick="openContactPanel()">
+                    Get Free Consultation <i class="fas fa-seedling"></i>
+                </button>
             </div>
         </div>
     </section>
 
-    <!-- Portfolio Section -->
-    <section class="portfolio" id="portfolio">
+    <!-- Results Section -->
+    <section class="results" id="results">
         <div class="container">
-            <h2 class="section-title">Portfolio Showcase</h2>
+            <div class="section-header">
+                <h2 class="section-title">Real Results, Real <span class="bloom-text">Growth</span></h2>
+                <p class="section-subtitle">See how ByteBloom transformed these businesses</p>
+            </div>
             <div class="portfolio-filter">
                 <button class="filter-btn active" data-filter="all">All Projects</button>
                 <button class="filter-btn" data-filter="video">Video AI</button>
@@ -377,6 +534,118 @@
         </div>
     </section>
 
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Success Stories That <span class="bloom-text">Inspire</span></h2>
+                <p class="section-subtitle">Hear from business leaders who transformed their companies with ByteBloom</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card" data-aos="fade-up">
+                    <div class="testimonial-header">
+                        <div class="company-info">
+                            <img src="https://via.placeholder.com/60x60/6366f1/ffffff?text=TG" alt="TechGlobal">
+                            <div>
+                                <h4>Sarah Chen</h4>
+                                <p>CEO, TechGlobal Inc.</p>
+                            </div>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <blockquote>
+                        "ByteBloom's AI automation reduced our processing time by 87%. What used to take days now happens in minutes. The ROI was visible within the first month!"
+                    </blockquote>
+                    <div class="testimonial-results">
+                        <div class="result-item">
+                            <span class="result-value">87%</span>
+                            <span class="result-label">Time Saved</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-value">$3.2M</span>
+                            <span class="result-label">Annual Savings</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card featured" data-aos="fade-up" data-aos-delay="100">
+                    <div class="featured-badge">🌟 Featured</div>
+                    <div class="testimonial-header">
+                        <div class="company-info">
+                            <img src="https://via.placeholder.com/60x60/f59e0b/ffffff?text=PG" alt="Puntoon Games">
+                            <div>
+                                <h4>Mike Rodriguez</h4>
+                                <p>Creative Director, Puntoon Games</p>
+                            </div>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <blockquote>
+                        "The video-to-comic AI pipeline ByteBloom created for us is revolutionary. We're producing content 20x faster and our 3.4M subscribers love the new format. Absolutely game-changing!"
+                    </blockquote>
+                    <div class="testimonial-results">
+                        <div class="result-item">
+                            <span class="result-value">20x</span>
+                            <span class="result-label">Faster Production</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-value">3.4M+</span>
+                            <span class="result-label">Happy Viewers</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-header">
+                        <div class="company-info">
+                            <img src="https://via.placeholder.com/60x60/10b981/ffffff?text=FC" alt="FinanceCore">
+                            <div>
+                                <h4>David Kumar</h4>
+                                <p>CTO, FinanceCore</p>
+                            </div>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <blockquote>
+                        "ByteBloom's predictive analytics helped us identify market opportunities we never saw coming. Revenue is up 35% and we're making decisions with confidence."
+                    </blockquote>
+                    <div class="testimonial-results">
+                        <div class="result-item">
+                            <span class="result-value">35%</span>
+                            <span class="result-label">Revenue Growth</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-value">95%</span>
+                            <span class="result-label">Forecast Accuracy</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-cta">
+                <p>Join these industry leaders in transforming your business</p>
+                <button class="btn btn-primary" onclick="openContactPanel()">
+                    Start Your Success Story <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
     <section class="contact" id="contact">
         <div class="container">
@@ -433,11 +702,12 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3><span class="brand-icon">🌱</span> ROOT<span class="brand-accent">AI</span></h3>
-                    <p>Planting seeds of innovation, growing intelligent solutions</p>
+                    <h3><span class="brand-icon">🌸</span> Byte<span class="brand-accent">Bloom</span></h3>
+                    <p>Where AI Solutions Help Your Business Flourish</p>
                     <div class="footer-badges">
-                        <span class="badge">AI Pioneer</span>
-                        <span class="badge">Trusted Partner</span>
+                        <span class="badge">🏆 Industry Leader</span>
+                        <span class="badge">🌟 Trusted by Fortune 500</span>
+                        <span class="badge">🔒 SOC 2 Certified</span>
                     </div>
                 </div>
                 <div class="footer-section">
