@@ -3,22 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Solutions Specialist - Elevate Business & Creativity</title>
+    <title>Root AI Solutions - Transforming Ideas into Intelligent Reality</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="loader-text">ROOT<span>AI</span></div>
+            <div class="progress-bar"></div>
+        </div>
+    </div>
+
     <!-- Custom Cursor -->
     <div class="cursor"></div>
     <div class="cursor-trail"></div>
+    <div class="cursor-dot"></div>
+
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" id="themeToggle">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+    </button>
 
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
-            <div class="nav-brand">AI Solutions</div>
+            <div class="nav-brand">
+                <span class="brand-icon">🌱</span>
+                ROOT<span class="brand-accent">AI</span>
+            </div>
             <ul class="nav-menu">
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
@@ -35,23 +56,50 @@
 
     <!-- Hero Section -->
     <section class="hero" id="home">
+        <canvas id="neural-network"></canvas>
         <div class="container">
             <div class="hero-content">
-                <h1 class="hero-title">AI Solutions that Elevate Business & Creativity</h1>
-                <p class="hero-subtitle">From Video-to-Comic pipelines to Chatbots—see how we bring ideas to life.</p>
+                <div class="hero-badge">
+                    <span class="badge-icon">✨</span>
+                    <span>Innovative AI Solutions</span>
+                </div>
+                <h1 class="hero-title glitch" data-text="ROOT AI SOLUTIONS">
+                    <span class="hero-root">ROOT</span>
+                    <span class="hero-ai">AI</span>
+                    <span class="hero-solutions">SOLUTIONS</span>
+                </h1>
+                <div class="typewriter-container">
+                    <p class="hero-subtitle typewriter"></p>
+                </div>
                 <div class="hero-buttons">
-                    <button class="btn btn-primary" onclick="openContactPanel()">Contact Me</button>
-                    <a href="https://wa.me/919075228258" target="_blank" class="btn btn-secondary">
-                        <i class="fab fa-whatsapp"></i> WhatsApp Me
+                    <button class="btn btn-glow" onclick="openContactPanel()">
+                        <span class="btn-text">Start Your AI Journey</span>
+                        <span class="btn-particles"></span>
+                    </button>
+                    <a href="https://wa.me/919075228258" target="_blank" class="btn btn-outline">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>Quick Chat</span>
                     </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item" data-count="50">0</div>
+                    <div class="stat-item" data-count="100">0</div>
+                    <div class="stat-item" data-count="24">0</div>
                 </div>
             </div>
             <div class="hero-visual">
-                <div class="floating-shapes">
-                    <div class="shape shape-1"></div>
-                    <div class="shape shape-2"></div>
-                    <div class="shape shape-3"></div>
+                <div class="ai-brain">
+                    <div class="brain-core"></div>
+                    <div class="brain-orbit orbit-1"></div>
+                    <div class="brain-orbit orbit-2"></div>
+                    <div class="brain-orbit orbit-3"></div>
                 </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Explore</span>
+            <div class="mouse">
+                <div class="wheel"></div>
             </div>
         </div>
     </section>
@@ -62,21 +110,45 @@
             <h2 class="section-title">About Me</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p class="lead">I'm an AI Solutions Specialist passionate about transforming creative visions into reality through cutting-edge artificial intelligence.</p>
-                    <p>My journey includes a remarkable collaboration with <strong>Puntoon Games</strong>, a YouTube powerhouse with over <strong>3.4 million subscribers</strong>. For their dynamic content needs, I developed sophisticated <strong>video-to-comic generation pipelines</strong> that revolutionized their content creation process.</p>
-                    <p>I combine technical rigour with creative innovation to deliver AI-powered media solutions that not only meet but exceed expectations. Whether it's transforming video content into engaging comic narratives or building intelligent conversational systems, I bring ideas to life with precision and artistry.</p>
-                    <div class="stats">
-                        <div class="stat-item">
-                            <h3>3.4M+</h3>
-                            <p>Channel Subscribers</p>
+                    <div class="about-intro">
+                        <h3 class="gradient-text">Where Innovation Meets Intelligence</h3>
+                        <p class="lead">Welcome to Root AI Solutions – where we plant the seeds of artificial intelligence to grow transformative solutions for your business.</p>
+                    </div>
+                    <div class="about-story">
+                        <div class="story-card">
+                            <div class="card-icon">🎮</div>
+                            <h4>Gaming Content Revolution</h4>
+                            <p>Partnered with <strong>Puntoon Games</strong> (3.4M+ subscribers) to create groundbreaking <strong>video-to-comic AI pipelines</strong> that transformed their content strategy.</p>
                         </div>
-                        <div class="stat-item">
-                            <h3>50+</h3>
-                            <p>AI Projects Delivered</p>
+                        <div class="story-card">
+                            <div class="card-icon">🚀</div>
+                            <h4>Innovation at Core</h4>
+                            <p>We don't just implement AI – we reimagine possibilities. From conversational AI to creative automation, we craft solutions that feel like magic.</p>
                         </div>
-                        <div class="stat-item">
-                            <h3>100%</h3>
-                            <p>Client Satisfaction</p>
+                        <div class="story-card">
+                            <div class="card-icon">🌟</div>
+                            <h4>Results That Matter</h4>
+                            <p>Every project is a masterpiece. We blend technical excellence with creative vision to deliver AI solutions that drive real business impact.</p>
+                        </div>
+                    </div>
+                    <div class="stats-container">
+                        <div class="stat-card animated-stat">
+                            <div class="stat-icon">📺</div>
+                            <h3 class="stat-number" data-target="3.4">0</h3>
+                            <span class="stat-suffix">M+</span>
+                            <p>Audience Reached</p>
+                        </div>
+                        <div class="stat-card animated-stat">
+                            <div class="stat-icon">🤖</div>
+                            <h3 class="stat-number" data-target="50">0</h3>
+                            <span class="stat-suffix">+</span>
+                            <p>AI Solutions Deployed</p>
+                        </div>
+                        <div class="stat-card animated-stat">
+                            <div class="stat-icon">⚡</div>
+                            <h3 class="stat-number" data-target="100">0</h3>
+                            <span class="stat-suffix">%</span>
+                            <p>Success Rate</p>
                         </div>
                     </div>
                 </div>
@@ -89,33 +161,73 @@
         <div class="container">
             <h2 class="section-title">Services & Solutions</h2>
             <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-video"></i>
+                <div class="service-card" data-service="video">
+                    <div class="service-bg"></div>
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="fas fa-video"></i>
+                            <div class="icon-bg"></div>
+                        </div>
+                        <h3>AI Video-to-Comic Generation</h3>
+                        <p>Revolutionary pipeline that transforms video content into stunning comic narratives. Used by creators with millions of followers.</p>
+                        <div class="service-features">
+                            <span class="feature-tag">Style Transfer</span>
+                            <span class="feature-tag">Auto Layout</span>
+                            <span class="feature-tag">Real-time</span>
+                        </div>
+                        <button class="service-cta">Explore <i class="fas fa-arrow-right"></i></button>
                     </div>
-                    <h3>AI Video-to-Comic Generation</h3>
-                    <p>Transform your video content into stunning comic narratives with our state-of-the-art AI pipeline. Perfect for content creators looking to expand their reach across different media formats.</p>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-comments"></i>
+                <div class="service-card" data-service="chat">
+                    <div class="service-bg"></div>
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="fas fa-comments"></i>
+                            <div class="icon-bg"></div>
+                        </div>
+                        <h3>Conversational AI Integration</h3>
+                        <p>Intelligent chatbots that understand context, emotion, and intent. Seamlessly integrate AI into your customer journey.</p>
+                        <div class="service-features">
+                            <span class="feature-tag">NLP</span>
+                            <span class="feature-tag">Multi-lingual</span>
+                            <span class="feature-tag">24/7 Support</span>
+                        </div>
+                        <button class="service-cta">Explore <i class="fas fa-arrow-right"></i></button>
                     </div>
-                    <h3>Conversational & Workflow AI Integration</h3>
-                    <p>Seamlessly integrate intelligent conversational AI into your business workflows. Automate customer interactions while maintaining a human touch.</p>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-robot"></i>
+                <div class="service-card" data-service="agent">
+                    <div class="service-bg"></div>
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="fas fa-robot"></i>
+                            <div class="icon-bg"></div>
+                        </div>
+                        <h3>Agentic AI Solutions</h3>
+                        <p>Autonomous AI agents that think, learn, and act. From workflow automation to complex decision-making systems.</p>
+                        <div class="service-features">
+                            <span class="feature-tag">Self-Learning</span>
+                            <span class="feature-tag">Automation</span>
+                            <span class="feature-tag">Custom Logic</span>
+                        </div>
+                        <button class="service-cta">Explore <i class="fas fa-arrow-right"></i></button>
                     </div>
-                    <h3>Custom Chatbots / Agentic AI</h3>
-                    <p>Build sophisticated chatbots and AI agents tailored to your specific needs. From customer service to specialized task automation, we create AI that works for you.</p>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-chart-line"></i>
+                <div class="service-card" data-service="data">
+                    <div class="service-bg"></div>
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="fas fa-chart-line"></i>
+                            <div class="icon-bg"></div>
+                        </div>
+                        <h3>Data Intelligence Platform</h3>
+                        <p>Turn raw data into actionable insights with AI-powered analytics and stunning interactive visualizations.</p>
+                        <div class="service-features">
+                            <span class="feature-tag">Predictive</span>
+                            <span class="feature-tag">Real-time</span>
+                            <span class="feature-tag">Custom Dashboards</span>
+                        </div>
+                        <button class="service-cta">Explore <i class="fas fa-arrow-right"></i></button>
                     </div>
-                    <h3>Data Intelligence & Visualization Tools</h3>
-                    <p>Unlock insights from your data with powerful AI-driven analytics and beautiful, interactive visualizations that tell compelling stories.</p>
                 </div>
             </div>
         </div>
@@ -125,44 +237,139 @@
     <section class="portfolio" id="portfolio">
         <div class="container">
             <h2 class="section-title">Portfolio Showcase</h2>
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="video">Video AI</button>
+                <button class="filter-btn" data-filter="chatbot">Chatbots</button>
+                <button class="filter-btn" data-filter="data">Data Intelligence</button>
+                <button class="filter-btn" data-filter="creative">Creative AI</button>
+            </div>
             <div class="portfolio-grid">
-                <div class="portfolio-item" data-category="video">
-                    <div class="portfolio-image">
-                        <img src="https://via.placeholder.com/400x300/667eea/ffffff?text=Puntoon+Games" alt="Puntoon Games Project">
-                        <div class="portfolio-overlay">
-                            <h3>Puntoon Games – Video-to-Comic</h3>
-                            <p>Developed AI pipeline for transforming gaming videos into engaging comic content</p>
-                            <span class="view-project">View Project <i class="fas fa-arrow-right"></i></span>
+                <div class="portfolio-item" data-category="video" data-aos="fade-up">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="https://via.placeholder.com/600x400/6366f1/ffffff?text=Puntoon+Games" alt="Puntoon Games Project">
+                            <div class="portfolio-tech">
+                                <span>Python</span>
+                                <span>TensorFlow</span>
+                                <span>OpenCV</span>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <div class="portfolio-header">
+                                <h3>Puntoon Games – Video-to-Comic AI</h3>
+                                <span class="portfolio-badge">🆕 Featured</span>
+                            </div>
+                            <p>Revolutionary AI pipeline converting gaming videos into stunning comic panels for 3.4M+ subscribers</p>
+                            <div class="portfolio-stats">
+                                <div class="stat">
+                                    <i class="fas fa-users"></i>
+                                    <span>3.4M+ Reach</span>
+                                </div>
+                                <div class="stat">
+                                    <i class="fas fa-rocket"></i>
+                                    <span>80% Faster</span>
+                                </div>
+                            </div>
+                            <button class="portfolio-btn" onclick="openProjectModal('puntoon')">
+                                View Case Study <i class="fas fa-arrow-right"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
-                <div class="portfolio-item" data-category="chatbot">
-                    <div class="portfolio-image">
-                        <img src="https://via.placeholder.com/400x300/f56565/ffffff?text=AI+Chatbot" alt="Enterprise Chatbot">
-                        <div class="portfolio-overlay">
-                            <h3>Enterprise Customer Service Bot</h3>
-                            <p>Intelligent conversational AI handling 10k+ queries daily</p>
-                            <span class="view-project">View Project <i class="fas fa-arrow-right"></i></span>
+                <div class="portfolio-item" data-category="chatbot" data-aos="fade-up" data-aos-delay="100">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="https://via.placeholder.com/600x400/ef4444/ffffff?text=Enterprise+AI" alt="Enterprise Chatbot">
+                            <div class="portfolio-tech">
+                                <span>GPT-4</span>
+                                <span>Node.js</span>
+                                <span>React</span>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <div class="portfolio-header">
+                                <h3>Enterprise Customer Intelligence Bot</h3>
+                                <span class="portfolio-badge">🔥 Live</span>
+                            </div>
+                            <p>Multi-lingual AI assistant handling complex queries with 98% accuracy across global operations</p>
+                            <div class="portfolio-stats">
+                                <div class="stat">
+                                    <i class="fas fa-comments"></i>
+                                    <span>10k+ Daily</span>
+                                </div>
+                                <div class="stat">
+                                    <i class="fas fa-globe"></i>
+                                    <span>15 Languages</span>
+                                </div>
+                            </div>
+                            <button class="portfolio-btn" onclick="openProjectModal('chatbot')">
+                                View Case Study <i class="fas fa-arrow-right"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
-                <div class="portfolio-item" data-category="data">
-                    <div class="portfolio-image">
-                        <img src="https://via.placeholder.com/400x300/48bb78/ffffff?text=Data+Viz" alt="Data Visualization">
-                        <div class="portfolio-overlay">
-                            <h3>Real-time Analytics Dashboard</h3>
-                            <p>AI-powered insights and predictive analytics platform</p>
-                            <span class="view-project">View Project <i class="fas fa-arrow-right"></i></span>
+                <div class="portfolio-item" data-category="data" data-aos="fade-up" data-aos-delay="200">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="https://via.placeholder.com/600x400/10b981/ffffff?text=Analytics+AI" alt="Data Visualization">
+                            <div class="portfolio-tech">
+                                <span>ML</span>
+                                <span>D3.js</span>
+                                <span>BigQuery</span>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <div class="portfolio-header">
+                                <h3>Predictive Analytics Dashboard</h3>
+                                <span class="portfolio-badge">📊 Analytics</span>
+                            </div>
+                            <p>Real-time AI-driven insights platform processing millions of data points for actionable intelligence</p>
+                            <div class="portfolio-stats">
+                                <div class="stat">
+                                    <i class="fas fa-database"></i>
+                                    <span>1M+ Records</span>
+                                </div>
+                                <div class="stat">
+                                    <i class="fas fa-chart-line"></i>
+                                    <span>95% Accuracy</span>
+                                </div>
+                            </div>
+                            <button class="portfolio-btn" onclick="openProjectModal('analytics')">
+                                View Case Study <i class="fas fa-arrow-right"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
-                <div class="portfolio-item" data-category="workflow">
-                    <div class="portfolio-image">
-                        <img src="https://via.placeholder.com/400x300/f8b500/ffffff?text=Workflow+AI" alt="Workflow Automation">
-                        <div class="portfolio-overlay">
-                            <h3>Workflow Automation Suite</h3>
-                            <p>End-to-end AI integration for business process optimization</p>
-                            <span class="view-project">View Project <i class="fas fa-arrow-right"></i></span>
+                <div class="portfolio-item" data-category="creative" data-aos="fade-up" data-aos-delay="300">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="https://via.placeholder.com/600x400/f59e0b/ffffff?text=Creative+AI" alt="Creative AI">
+                            <div class="portfolio-tech">
+                                <span>Stable Diffusion</span>
+                                <span>DALL-E</span>
+                                <span>Custom Models</span>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <div class="portfolio-header">
+                                <h3>AI Content Generation Suite</h3>
+                                <span class="portfolio-badge">🎨 Creative</span>
+                            </div>
+                            <p>End-to-end creative AI platform generating images, videos, and interactive content at scale</p>
+                            <div class="portfolio-stats">
+                                <div class="stat">
+                                    <i class="fas fa-image"></i>
+                                    <span>50k+ Assets</span>
+                                </div>
+                                <div class="stat">
+                                    <i class="fas fa-magic"></i>
+                                    <span>10x Faster</span>
+                                </div>
+                            </div>
+                            <button class="portfolio-btn" onclick="openProjectModal('creative')">
+                                View Case Study <i class="fas fa-arrow-right"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -226,8 +433,12 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>AI Solutions</h3>
-                    <p>Transforming ideas into intelligent solutions</p>
+                    <h3><span class="brand-icon">🌱</span> ROOT<span class="brand-accent">AI</span></h3>
+                    <p>Planting seeds of innovation, growing intelligent solutions</p>
+                    <div class="footer-badges">
+                        <span class="badge">AI Pioneer</span>
+                        <span class="badge">Trusted Partner</span>
+                    </div>
                 </div>
                 <div class="footer-section">
                     <h4>Quick Links</h4>
@@ -271,6 +482,18 @@
         </div>
     </div>
 
+    <!-- Project Modal -->
+    <div class="project-modal" id="projectModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeProjectModal()">&times;</button>
+            <div class="modal-body" id="modalBody">
+                <!-- Dynamic content -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Add particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
